@@ -31,5 +31,8 @@ function updFortaleza() {
     } else if(pass.length>4 && pass.length<=8){
         document.getElementById("msjPass").innerHTML="Fortaleza Media"
         document.getElementById("msjPass").className="bg-warning text-light text-center rounded my-2 px-2"
+    }else {
+        document.getElementById("msjPass").innerHTML="Fortaleza Alta"
+        document.getElementById("msjPass").className="bg-info text-light text-center rounded my-2 px-2"
     }
 }
