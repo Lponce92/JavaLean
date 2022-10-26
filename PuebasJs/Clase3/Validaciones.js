@@ -28,6 +28,7 @@ function updFortaleza() {
     
     if (pass.length<=4) {
         document.getElementById("msjPass").innerHTML="Fortaleza Baja"
+        document.getElementById("msjPass").className="bg-danger text-light text-center rounded my-2 px-2"
     } else if(pass.length>4 && pass.length<=8){
         document.getElementById("msjPass").innerHTML="Fortaleza Media"
         document.getElementById("msjPass").className="bg-warning text-light text-center rounded my-2 px-2"
