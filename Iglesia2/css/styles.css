@@ -4166,7 +4166,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -11526,7 +11526,7 @@ body {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: #efb810;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000;
