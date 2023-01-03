@@ -28,7 +28,6 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">Conocenos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Reuniones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#biblias">Biblias</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contactos</a></li>
                     </ul>
                 </div>
@@ -106,25 +105,31 @@
                 </div>
             </div>
         </section>
-        <!-- Signup-->
+        <!-- Vers-->
 
-        <section class="projects-section bg-light" id="biblias">
+        <section class="projects-section bg-light" id="Versículo">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><iframe src="https://www.bible.com/es/bible/149/GEN.INTRO1.RVR1960" width="100%" height="500"></iframe></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Biblias OnLine</h4>
-                            <p class="text-black-50 mb-0"></p>
-                            <p class="text-black-50 mb-0"></p>
-                        </div>
-                    </div>
+                    <!-- alternative for no javascript -->
+                    <script type="text/javascript" language="JavaScript" src="https://www.biblegateway.com/votd/votd.write.callback.js"><br/>
+                    </script>
+                    <script type="text/javascript" language="JavaScript"
+                        src="https://www.biblegateway.com/votd/get?format=json&version=NVI&callback=BG.votdWriteCallback"><br />
+                    </script>
+                    <!-- alternative for no javascript -->
+                    <noscript>
+                        <iframe framespacing="0" frameborder="no" src="https://www.biblegateway.com/votd/get?format=html&version=NVI"><span
+                                data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;"
+                                class="mce_SELRES_start"></span>
+                            Versículo del día</iframe>
+                    </noscript>
                 </div>
             </div>
         </section>
-        
 
+        
+    
         <!-- Contact-->
         <section class="contact-section bg-black" id="signup">
             <div class="container px-4 px-lg-5">
