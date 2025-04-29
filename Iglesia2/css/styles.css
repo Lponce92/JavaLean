@@ -11549,15 +11549,26 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../assets/img/BS-fondo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background: url("../assets/img/BS-fondo.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 2rem; /* Ajuste base */
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .masthead {
+    min-height: 25rem;
+    padding: 6rem 1rem;
+    background-position: center top;
+  }
+}
+
 . h1, .masthead .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
